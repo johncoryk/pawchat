@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+$darkPrimary: #282828;
+$darkSecondary: #ececec;
+$colorPrimary: #8185ff;
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: ease 200ms;
+
+    &:hover {
+      color: $colorPrimary;
+    }
+  }
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+.top-bar {
+  background: $darkPrimary;
+  height: auto;
+  padding: 1rem;
+}
+
+.top-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  max-width: 90%;
+  margin: auto;
+
+  .top-logo {
+    color: #fff;
+    align-self: center;
+    justify-self: start;
+    font-size: 2rem;
+  }
+
+  .top-nav-links {
+    color: #fff;
+    align-self: center;
+    justify-self: end;
+    font-size: 1.2;
+
+    a {
+      padding: 0 10px;
+    }
+  }
+}
+
+.main-container {
+  margin: 0 auto;
+
+  .title-info {
+    text-align: center;
+    margin: 65px auto 0;
+    width: auto;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: normal;
+    }
+
+    .sub-info {
+      max-width: 45%;
+      margin: 0 auto 12px;
+      font-size: 1.2rem;
+    }
+
+    .sub-caps {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0 auto 12px;
+    }
+  }
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 75px auto;
+  padding: 15px;
+  max-width: 85%;
+
+  .paw-print {
+    justify-self: center;
+    align-self: center;
+    height: auto;
+    width: auto;
+
+    img {
+      max-width: 300px;
+      height: auto;
+      transform: rotate(10deg);
+    }
+  }
+
+  .how-it-works {
+    align-self: center;
+
+    h2 {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.btn-black {
+  background-color: $darkPrimary;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  transition: ease 300ms;
+  font-size: 1.2;
+
+  &:hover {
+    background-color: #fff;
+    color: $darkPrimary;
+  }
+}
+
+.section-3 {
+  background-color: $darkPrimary;
+  height: auto;
+  padding: 10px;
+
+  .demo-info {
+    padding-right: 55px;
+  }
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  .chat-example {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 85px auto;
+    color: #fff;
+
+    .demo-img {
+      justify-self: center;
+      align-self: center;
+      height: auto;
+      width: auto;
+
+      img {
+        max-width: 400px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.btn-white {
+  background-color: #fff;
+  color: $darkPrimary;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  transition: ease 300ms;
+
+  &:hover {
+    background-color: $darkPrimary;
+    color: #fff;
+  }
+}
+
+.section-4 {
+  max-width: 90%;
+  margin: 70px auto;
+
+  .signup-info {
+    text-align: center;
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+
+    p {
+      max-width: 55%;
+      margin: auto;
+      font-size: 1.3rem;
+    }
+
+    input {
+      width: 600px;
+      margin: 15px auto 0;
+      height: auto;
+      border-radius: 5px;
+      background-color: $darkSecondary;
+      color: $darkPrimary;
+      border-style: none;
+      padding: 10px;
+      display: block;
+    }
+
+    input[type='email'] {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.footer {
+  background-color: $darkPrimary;
+  height: auto;
+  padding: 10px;
+  margin: 90px auto 0;
+
+  .footer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    margin: 40px auto;
+    max-width: 90%;
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 20px;
+
+      .footer-app-links {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+      }
+
+      .feature-links {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+      }
+    }
+  }
+
+  .footer-app-info {
+    justify-self: end;
+    align-self: end;
+  }
+}
+
+.footer-links-title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
