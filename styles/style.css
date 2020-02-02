@@ -67,7 +67,6 @@ h2 {
       align-self: center;
   -ms-grid-column-align: end;
       justify-self: end;
-  font-size: 1.2;
 }
 
 .top-info .top-nav-links a {
@@ -144,10 +143,10 @@ h2 {
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
-  margin-top: 20px;
+  margin-top: 25px;
   -webkit-transition: ease 300ms;
   transition: ease 300ms;
-  font-size: 1.2;
+  font-size: 1.2rem;
 }
 
 .btn-black:hover {
@@ -199,9 +198,10 @@ h2 {
   color: #282828;
   border-radius: 5px;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 25px;
   -webkit-transition: ease 300ms;
   transition: ease 300ms;
+  font-size: 1.2rem;
 }
 
 .btn-white:hover {
@@ -295,5 +295,62 @@ h2 {
 .footer-links-title {
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+.email-btn {
+  padding: 10px 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  .top-bar .top-info {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .top-bar .top-info .top-logo {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .top-bar .top-info .top-nav-links {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .main-container .title-info {
+    margin-top: 30px;
+  }
+  .main-container .title-info .sub-info {
+    max-width: 65%;
+  }
+  .main-container .section-2 {
+    display: block;
+    margin: 50px auto;
+  }
+  .main-container .section-2 .how-it-works {
+    margin-top: 20px;
+  }
+  .main-container .section-3 .chat-example {
+    display: block;
+    margin: 45px auto;
+  }
+  .main-container .section-3 .chat-example .demo-info {
+    padding: 0;
+    margin: 0 auto 40px;
+  }
+  .main-container .section-3 .chat-example .demo-img img {
+    width: 100%;
+  }
+  .main-container .section-4 {
+    margin: 50px auto 0;
+  }
+  .main-container .section-4 .signup-info p {
+    max-width: 80%;
+  }
+  .main-container .section-4 .signup-info input {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

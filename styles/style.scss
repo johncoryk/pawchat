@@ -4,6 +4,8 @@ $darkPrimary: #282828;
 $darkSecondary: #ececec;
 $colorPrimary: #8185ff;
 
+$break-small: 450px;
+
 html {
   box-sizing: border-box;
   font-size: 15px;
@@ -60,7 +62,6 @@ h2 {
     color: #fff;
     align-self: center;
     justify-self: end;
-    font-size: 1.2;
 
     a {
       padding: 0 10px;
@@ -130,9 +131,9 @@ h2 {
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
-  margin-top: 20px;
+  margin-top: 25px;
   transition: ease 300ms;
-  font-size: 1.2;
+  font-size: 1.2rem;
 
   &:hover {
     background-color: #fff;
@@ -179,8 +180,9 @@ h2 {
   color: $darkPrimary;
   border-radius: 5px;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 25px;
   transition: ease 300ms;
+  font-size: 1.2rem;
 
   &:hover {
     background-color: $darkPrimary;
@@ -263,4 +265,73 @@ h2 {
 .footer-links-title {
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+.email-btn {
+  padding: 10px 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  .top-bar {
+    .top-info {
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr;
+
+      .top-logo {
+        justify-self: center;
+      }
+
+      .top-nav-links {
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+  .main-container {
+    .title-info {
+      margin-top: 30px;
+
+      .sub-info {
+        max-width: 65%;
+      }
+    }
+    .section-2 {
+      display: block;
+      margin: 50px auto;
+
+      .how-it-works {
+        margin-top: 20px;
+      }
+    }
+
+    .section-3 {
+      .chat-example {
+        display: block;
+        margin: 45px auto;
+
+        .demo-info {
+          padding: 0;
+          margin: 0 auto 40px;
+        }
+
+        .demo-img img {
+          width: 100%;
+        }
+      }
+    }
+
+    .section-4 {
+      margin: 50px auto 0;
+
+      .signup-info {
+        p {
+          max-width: 80%;
+        }
+
+        input {
+          width: 80%;
+        }
+      }
+    }
+  }
 }
